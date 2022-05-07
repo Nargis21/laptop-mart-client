@@ -46,12 +46,12 @@ const Register = () => {
     }
     return (
         <div className='form-container'>
-            <h1 className='mt-3'>Login</h1>
+            <h1 className='mt-3'>Sign Up</h1>
             <form onSubmit={handleUserCreateUser}>
                 <input onBlur={handleEmailBlur} type="email" name="email" placeholder='Your Email' />
                 <input onBlur={handlePasswordBlur} type="password" name="password" placeholder='Password' />
                 <input onBlur={handleConfirmPasswordBlur} type="password" name="ConfirmPassword" placeholder='Confirm Password' />
-                <input className='btn btn-primary' type="submit" value="Login" />
+                <input className='btn btn-primary' type="submit" value="Register" />
             </form>
             <p className='text-danger'>{error || emailError?.message || googleError?.message}</p>
             {loading && <Spinner animation="border" variant="primary" />}
