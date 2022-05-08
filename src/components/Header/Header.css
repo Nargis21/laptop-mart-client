@@ -1,3 +1,9 @@
 .navbar {
     background-color: skyblue;
 }
+
+.signOut-btn {
+    background-color: white;
+    border: none;
+    margin-bottom: 10px;
+}

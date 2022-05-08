@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router-dom';
 
 const InventoryDetail = () => {
@@ -11,13 +12,16 @@ const InventoryDetail = () => {
             .then(data => setProduct(data))
     }, [product])
     const { name, img, price, quantity, supplier, description } = product
-    // const [newQuantity, setNewQuantity] = useState(0)
-    // const updatedQuantity = { newQuantity }
-    const handleDelivered = event => {
-        event.preventDefault()
-        const newQuantity = (event.target.quantity.value) - 1
-        const updatedQuantity = { newQuantity }
-        // setNewQuantity(quantity - 1)
+    // const [newUpdatedQuantity, setNewQuantity] = useState(0)
+    const handleDecrease = () => {
+        // setNewQuantity(parseInt(quantity) - 1)
+        // console.log(newUpdatedQuantity)
+        // const updatedQuantity = { newUpdatedQuantity }
+        // console.log(updatedQuantity)
+        const newUpdatedQuantity = parseInt(quantity) - 1
+        console.log(newUpdatedQuantity)
+        const updatedQuantity = { newUpdatedQuantity }
+        console.log(updatedQuantity)
         const url = `https://secure-temple-20548.herokuapp.com/product/${id}`
         fetch(url, {
             method: 'PUT',
@@ -32,6 +36,31 @@ const InventoryDetail = () => {
             })
     }
 
+
+
+    const { register, handleSubmit } = useForm();
+    const onSubmit = data => {
+        console.log(data);
+        const newQuantity = data.quantity
+        console.log(newQuantity)
+        const newUpdatedQuantity = parseInt(quantity) + parseInt(newQuantity)
+        console.log(newUpdatedQuantity)
+        const updatedQuantity = { newUpdatedQuantity }
+        console.log(updatedQuantity)
+
+        const url = `https://secure-temple-20548.herokuapp.com/product/${id}`
+        fetch(url, {
+            method: 'PUT',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(updatedQuantity)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+            })
+    }
     return (
         <div>
             <h1>This is inventry detail page</h1>
@@ -41,10 +70,12 @@ const InventoryDetail = () => {
             <h5>Quantity: {quantity}</h5>
             <h5>Supplier: {supplier}</h5>
             <p>{description}</p>
-            <button className='btn btn-primary w-50' onClick={handleDelivered}>Delivered</button>
-            <form className='w-50' onSubmit={handleDelivered}>
-                <input type="number" name="quantity" placeholder='Add Quantity' />
-                <input type="submit" value="Add Quantity" />
+
+            <button onClick={handleDecrease} className='btn btn-primary w-50'>Delivered</button>
+
+            <form onSubmit={handleSubmit(onSubmit)}>
+                <input placeholder="Quantity" type="number" {...register("quantity")} />
+                <input type="submit" value="Restock Product" />
             </form>
         </div>
     );

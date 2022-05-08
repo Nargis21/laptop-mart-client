@@ -20,7 +20,9 @@ const HomeProducts = () => {
                     ></Products>)
                 }
             </div>
-            <Link className='w-50' to="/manage"><button className='btn btn-primary'>Manage Inventory</button></Link>
+            <div className='w-50 mx-auto'>
+                <Link to="/manage"><button className='btn btn-primary'>Manage Inventory</button></Link>
+            </div>
         </div>
     );
 };
