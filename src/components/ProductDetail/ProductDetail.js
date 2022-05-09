@@ -72,7 +72,7 @@ const InventoryDetail = () => {
             <p>{description}</p>
 
             <div className="w-50 mx-auto">
-                <button onClick={handleDecrease} className='btn btn-secondary w-50'>Delivered</button>
+                <button onClick={handleDecrease} className='btn btn-primary w-50'>Delivered</button>
             </div>
 
             <div className="w-50 mx-auto">
