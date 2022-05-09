@@ -11,7 +11,10 @@ const HomeProducts = () => {
     }, [])
     return (
         <div>
-            <h1>{products.length}</h1>
+            <div className='text-primary m-5'>
+                <h1 className='mx-5 px-5'>Available Products</h1>
+                <hr />
+            </div>
             <div className='row'>
                 {
                     products.map(product => <Products
@@ -21,7 +24,7 @@ const HomeProducts = () => {
                 }
             </div>
             <div className='w-50 mx-auto'>
-                <Link to="/manage"><button className='btn btn-primary'>Manage Inventory</button></Link>
+                <Link to="/manage"><button className='btn btn-secondary'>Manage Inventory</button></Link>
             </div>
         </div>
     );

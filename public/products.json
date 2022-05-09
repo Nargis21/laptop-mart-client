@@ -2,81 +2,81 @@
     {
         "name": "Dell",
         "price": "40,000",
-        "quantity": 10,
+        "quantity": 15,
         "supplier": "AJ Tech",
         "img": "https://i.ibb.co/w0TGT7z/laptop1.jpg",
-        "description": "This is branded laptop"
+        "description": "If you're looking for the best Windows laptop then you will certainly have to go with the Dell."
     },
     {
-        "name": "Dell",
-        "price": "40,000",
-        "quantity": 10,
-        "supplier": "AJ Tech",
-        "img": "https://i.ibb.co/w0TGT7z/laptop1.jpg",
-        "description": "This is branded laptop"
+        "name": "HP",
+        "price": "45,000",
+        "quantity": 12,
+        "supplier": "SR Mart",
+        "img": "https://i.ibb.co/T4Yc3cL/laptop2.jpg",
+        "description": "HP also known as Hewlett-Packard is one of the oldest electronics brands that is not as popular as it."
     },
     {
-        "name": "Dell",
-        "price": "40,000",
+        "name": "ASUS",
+        "price": "42,000",
         "quantity": 10,
         "supplier": "AJ Tech",
-        "img": "https://i.ibb.co/w0TGT7z/laptop1.jpg",
-        "description": "This is branded laptop"
+        "img": "https://i.ibb.co/vssSbnw/asus2.jpg",
+        "description": "ASUS laptops are mostly known for being affordable compared to other brands and reason behind that might be their in-house."
     },
     {
-        "name": "Dell",
-        "price": "40,000",
-        "quantity": 10,
-        "supplier": "AJ Tech",
-        "img": "https://i.ibb.co/w0TGT7z/laptop1.jpg",
-        "description": "This is branded laptop"
+        "name": "LENOVO",
+        "price": "50,000",
+        "quantity": 15,
+        "supplier": "RJ Tech",
+        "img": "https://i.ibb.co/tJ34bdd/laptop4.jpg",
+        "description": "Lenovo is one of the most premium laptop brands and their prices are slightly higher compared to other manufacturers."
     },
     {
-        "name": "Dell",
-        "price": "40,000",
-        "quantity": 10,
+        "name": "APPLE",
+        "price": "60,000",
+        "quantity": 18,
         "supplier": "AJ Tech",
-        "img": "https://i.ibb.co/w0TGT7z/laptop1.jpg",
-        "description": "This is branded laptop"
+        "img": "https://i.ibb.co/XZqGG9V/laptop5.jpg",
+        "description": "Apple is definitely one of the luxury brands when it comes to Laptops, Smartphones & Computers."
     },
     {
-        "name": "Dell",
-        "price": "40,000",
-        "quantity": 10,
-        "supplier": "AJ Tech",
-        "img": "https://i.ibb.co/w0TGT7z/laptop1.jpg",
-        "description": "This is branded laptop"
+        "name": "ACER",
+        "price": "55,000",
+        "quantity": 5,
+        "supplier": "BD Tech",
+        "img": "https://i.ibb.co/CMhPR0c/acer.jpg",
+        "description": "Acer is a Taiwanese computer-manufacturer with a global clientele. Acer laptops are usually very smart "
     },
     {
-        "name": "Dell",
+        "name": "SAMSUNG",
         "price": "40,000",
         "quantity": 10,
-        "supplier": "AJ Tech",
-        "img": "https://i.ibb.co/w0TGT7z/laptop1.jpg",
-        "description": "This is branded laptop"
+        "supplier": "SR Mart",
+        "img": "https://i.ibb.co/wWg0YLL/laptop7.jpg",
+        "description": "Samsung is a huge name when it comes to smartphones, tablets, televisions, air conditioners, and refrigerators."
     },
     {
-        "name": "Dell",
+        "name": "RAZER",
         "price": "40,000",
         "quantity": 10,
-        "supplier": "AJ Tech",
-        "img": "https://i.ibb.co/w0TGT7z/laptop1.jpg",
-        "description": "This is branded laptop"
+        "supplier": "BD Tech",
+        "img": "https://i.ibb.co/ySncTZ5/laptop8.jpg",
+        "description": "Razer comes up with a unique feature for laptops and one can explore the entire range of gaming laptops.."
     },
     {
-        "name": "Dell",
-        "price": "40,000",
+        "name": "MSI",
+        "price": "45,000",
         "quantity": 10,
         "supplier": "AJ Tech",
-        "img": "https://i.ibb.co/w0TGT7z/laptop1.jpg",
-        "description": "This is branded laptop"
+        "img": "https://i.ibb.co/JxC2dtm/laptop9.jpg",
+        "description": "MSI is one of the best laptop brands for gaming and is highly known for delivering the best high-end gaming laptops. "
     },
     {
-        "name": "Dell",
-        "price": "40,000",
+        "name": "MICROSOFT SURFACE",
+        "price": "65,000",
         "quantity": 10,
-        "supplier": "AJ Tech",
-        "img": "https://i.ibb.co/w0TGT7z/laptop1.jpg",
-        "description": "This is branded laptop"
+        "supplier": "BD Mart",
+        "img": "https://i.ibb.co/C8jh5zG/Microsoft.jpg",
+        "description": "Microsoft Corporation is American based company that develops, manufactures many licensed software and hardware products."
     }
 ]

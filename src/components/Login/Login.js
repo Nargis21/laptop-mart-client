@@ -24,6 +24,7 @@ const Login = () => {
     const [sendPasswordResetEmail, sending, ResetError] = useSendPasswordResetEmail(auth);
 
     const [token] = useToken(user || googleUser)
+    console.log(token)
     if (token) {
         navigate(from, { replace: true })
     }

@@ -63,20 +63,24 @@ const InventoryDetail = () => {
     }
     return (
         <div>
-            <h1>This is inventry detail page</h1>
-            <img height='150px' src={img} alt="" />
+            <h1 className='text-primary m-3'>Product Details</h1>
+            <img height='200px' src={img} alt="" />
             <h2>{name}</h2>
             <h5>Price: ${price}</h5>
             <h5>Quantity: {quantity}</h5>
             <h5>Supplier: {supplier}</h5>
             <p>{description}</p>
 
-            <button onClick={handleDecrease} className='btn btn-primary w-50'>Delivered</button>
+            <div className="w-50 mx-auto">
+                <button onClick={handleDecrease} className='btn btn-secondary w-50'>Delivered</button>
+            </div>
 
-            <form onSubmit={handleSubmit(onSubmit)}>
-                <input placeholder="Quantity" type="number" {...register("quantity")} />
-                <input type="submit" value="Restock Product" />
-            </form>
+            <div className="w-50 mx-auto">
+                <form onSubmit={handleSubmit(onSubmit)}>
+                    <input placeholder="Quantity" type="number" {...register("quantity")} />
+                    <input type="submit" value="Restock Product" />
+                </form>
+            </div>
         </div>
     );
 };

@@ -12,6 +12,7 @@ import RequireAuth from './components/RequireAuth/RequireAuth';
 import ManageInventory from './components/ManageInventory/ManageInventory';
 import AddInventory from './components/AddInventory/AddInventory';
 import MyItems from './components/MyItems/MyItems';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
           <RequireAuth><MyItems></MyItems></RequireAuth>
         }></Route>
       </Routes>
+      <Footer></Footer>
       <ToastContainer></ToastContainer>
     </div>
   );

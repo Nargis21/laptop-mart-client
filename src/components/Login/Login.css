@@ -59,3 +59,9 @@ button p {
 .googleLogin {
     margin: 40px;
 }
+
+@media only screen and (max-width: 576px) {
+    .form-container {
+        width: 100%;
+    }
+}

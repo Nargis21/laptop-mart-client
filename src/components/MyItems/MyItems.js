@@ -12,7 +12,7 @@ const MyItems = () => {
     useEffect(() => {
         const getOrders = async () => {
             const email = user.email
-            const url = `https://fast-peak-48345.herokuapp.com/order?email=${email}`
+            const url = `https://secure-temple-20548.herokuapp.com/items?email=${email}`
             try {
                 const { data } = await axios.get(url, {
                     headers: {
@@ -34,6 +34,10 @@ const MyItems = () => {
     return (
         <div>
             <h1>My Items:{items.length}</h1>
+            {
+                items.map(item => <h2 key={item._id}>{item.name}</h2>
+                )
+            }
         </div>
     );
 };

@@ -1,0 +1,6 @@
+@media only screen and (max-width: 576px) {
+    .inventory-container {
+        width: 100%;
+        margin: 0px;
+    }
+}

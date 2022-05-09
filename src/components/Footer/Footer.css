@@ -1,0 +1,17 @@
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    height: 200px;
+}
+
+.footer-container a {
+    display: block;
+    color: gray;
+}
+
+@media only screen and (max-width: 576px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}
