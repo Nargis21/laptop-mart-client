@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const InventoryDetail = () => {
     const { id } = useParams()
@@ -80,6 +80,9 @@ const InventoryDetail = () => {
                     <input placeholder="Quantity" type="number" {...register("quantity")} />
                     <input type="submit" value="Restock Product" />
                 </form>
+            </div>
+            <div className='w-50 mx-auto'>
+                <Link to="/manage"><button className='btn btn-secondary'>Manage Inventories</button></Link>
             </div>
         </div>
     );

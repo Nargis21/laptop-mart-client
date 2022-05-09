@@ -25,7 +25,7 @@ const Login = () => {
 
     const [token] = useToken(user || googleUser)
     console.log(token)
-    if (token) {
+    if (user) {
         navigate(from, { replace: true })
     }
 

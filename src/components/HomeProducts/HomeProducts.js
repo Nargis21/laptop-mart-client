@@ -24,7 +24,7 @@ const HomeProducts = () => {
                 }
             </div>
             <div className='w-50 mx-auto'>
-                <Link to="/manage"><button className='btn btn-secondary'>Manage Inventory</button></Link>
+                <Link to="/manage"><button className='btn btn-secondary'>Manage Inventories</button></Link>
             </div>
         </div>
     );

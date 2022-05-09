@@ -1,5 +1,4 @@
 # LAPTOP MART
-
 ## [Live Website Link]( https://laptop-mart.web.app)
 - This is a Laptop warehouse management website website.
 - It has user Login,Sign up and Sign out system.
