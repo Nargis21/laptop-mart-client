@@ -12,12 +12,8 @@ const InventoryDetail = () => {
             .then(data => setProduct(data))
     }, [product])
     const { name, img, price, quantity, supplier, description } = product
-    // const [newUpdatedQuantity, setNewQuantity] = useState(0)
+
     const handleDecrease = () => {
-        // setNewQuantity(parseInt(quantity) - 1)
-        // console.log(newUpdatedQuantity)
-        // const updatedQuantity = { newUpdatedQuantity }
-        // console.log(updatedQuantity)
         const newUpdatedQuantity = parseInt(quantity) - 1
         console.log(newUpdatedQuantity)
         const updatedQuantity = { newUpdatedQuantity }
