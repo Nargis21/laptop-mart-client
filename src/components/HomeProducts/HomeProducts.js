@@ -12,7 +12,7 @@ const HomeProducts = () => {
     return (
         <div>
             <div className='text-primary m-5'>
-                <h1 className='mx-5 px-5'>Available Products</h1>
+                <h1 className='mx-5 px-5'>Available Laptops</h1>
                 <hr />
             </div>
             <div className='row'>
