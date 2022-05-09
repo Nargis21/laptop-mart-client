@@ -26,10 +26,14 @@ const Header = () => {
                         </Nav>
                         <Nav className='text-white text-bold'>
                             <Nav.Link as={Link} to='/home'>Home</Nav.Link>
-                            <Nav.Link as={Link} to='/manage'>Manage Items</Nav.Link>
-                            <Nav.Link as={Link} to='/add'>Add Items</Nav.Link>
-                            <Nav.Link as={Link} to='/myItem'>My Items</Nav.Link>
-
+                            <Nav.Link as={Link} to='/blogs'>Blogs</Nav.Link>
+                            {
+                                user && <>
+                                    <Nav.Link as={Link} to='/manage'>Manage Items</Nav.Link>
+                                    <Nav.Link as={Link} to='/add'>Add Items</Nav.Link>
+                                    <Nav.Link as={Link} to='/myItem'>My Items</Nav.Link>
+                                </>
+                            }
                             {
                                 user ?
                                     <Nav.Link href="">

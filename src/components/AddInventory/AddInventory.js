@@ -1,7 +1,10 @@
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
+import auth from '../../firebase.init';
 import './AddInventory.css'
 const AddInventory = () => {
+    const [user] = useAuthState(auth)
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data);
@@ -20,9 +23,9 @@ const AddInventory = () => {
     }
     return (
         <div className='m-3 inventory-container'>
-            <h2>Add Inventory</h2>
+            <h2>Add new Product</h2>
             <form className='w-50 mx-auto' onSubmit={handleSubmit(onSubmit)}>
-                <input placeholder='Email' type="email" {...register("email")} />
+                <input placeholder='Email' value={user.email} type="email" {...register("email")} />
                 <input placeholder='Name' {...register("name", { required: true, maxLength: 20 })} />
                 <input placeholder='Price' type="number" {...register("price")} />
                 <input placeholder='Quantity' type="number" {...register("quantity")} />

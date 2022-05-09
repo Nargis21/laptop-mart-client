@@ -13,6 +13,8 @@ import ManageInventory from './components/ManageInventory/ManageInventory';
 import AddInventory from './components/AddInventory/AddInventory';
 import MyItems from './components/MyItems/MyItems';
 import Footer from './components/Footer/Footer';
+import Blogs from './components/Blogs/Blogs';
+import NotFound from './components/NotFound/NotFound';
 
 
 function App() {
@@ -24,6 +26,7 @@ function App() {
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/inventory/:id' element={
           <RequireAuth><ProductDetail></ProductDetail></RequireAuth>
         }></Route>
@@ -36,7 +39,9 @@ function App() {
         <Route path='/myItem' element={
           <RequireAuth><MyItems></MyItems></RequireAuth>
         }></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
+
       <Footer></Footer>
       <ToastContainer></ToastContainer>
     </div>
