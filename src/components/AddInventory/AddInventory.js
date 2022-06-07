@@ -3,11 +3,11 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
 import auth from '../../firebase.init';
 import './AddInventory.css'
+import { toast } from 'react-toastify';
 const AddInventory = () => {
     const [user] = useAuthState(auth)
-    const { register, handleSubmit } = useForm();
+    const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        console.log(data);
         const url = 'https://secure-temple-20548.herokuapp.com/product'
         fetch(url, {
             method: 'POST',
@@ -18,7 +18,10 @@ const AddInventory = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data)
+                if (data.acknowledged) {
+                    toast.success('Product added successfully!')
+                    reset()
+                }
             })
     }
     return (
